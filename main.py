@@ -80,8 +80,6 @@ al_azan = (f'{__file__}Al-Azan.mp3'.replace("main.py",""))
 keep_alive = True
 while keep_alive:
 
-    print(current_time() + " " + isha)
-
     if fajr == current_time():
         notify("Azan", "Time to pray Fajr", "Prayertimes")
         playsound(al_azan)
@@ -104,9 +102,6 @@ while keep_alive:
         sleep(60)
     elif isha == current_time():
         notify("Azan", "Time to pray Isha", "Prayertimes")
-        playsound(al_azan)
-        sleep(60)
-    elif current_time() == current_time():
         playsound(al_azan)
         sleep(60)
 
