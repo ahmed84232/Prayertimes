@@ -75,7 +75,7 @@ print(f"AL- Maghrib: {maghrib}")
 print(f"AL- Isha: {isha}")
 
 
-
+al_azan = (f'{__file__}Al-Azan.mp3'.replace("main.py",""))
 
 keep_alive = True
 while keep_alive:
@@ -84,30 +84,30 @@ while keep_alive:
 
     if fajr == current_time():
         notify("Azan", "Time to pray Fajr", "Prayertimes")
-        playsound("D:\PY-Programs\Prayertimes\Al-Azan.mp3")
+        playsound(al_azan)
         sleep(60)
     elif duha == current_time():
         notify("Azan", "Time to pray Duha", "Prayertimes")
-        playsound("D:\PY-Programs\Prayertimes\Al-Azan.mp3")
+        playsound(al_azan)
         sleep(60)
     elif duhr == current_time():
         notify("Azan", "Time to pray Duhr", "Prayertimes")
-        playsound("D:\PY-Programs\Prayertimes\Al-Azan.mp3")
+        playsound(al_azan)
         sleep(60)
     elif asr == current_time():
         notify("Azan", "Time to pray Asr", "Prayertimes")
-        playsound("D:\PY-Programs\Prayertimes\Al-Azan.mp3")
+        playsound(al_azan)
         sleep(60)
     elif maghrib == current_time():
         notify("Azan", "Time to pray Maghrib", "Prayertimes")
-        playsound("D:\PY-Programs\Prayertimes\Al-Azan.mp3")
+        playsound(al_azan)
         sleep(60)
     elif isha == current_time():
         notify("Azan", "Time to pray Isha", "Prayertimes")
-        playsound("D:\PY-Programs\Prayertimes\Al-Azan.mp3")
+        playsound(al_azan)
         sleep(60)
     elif current_time() == current_time():
-        playsound("D:\PY-Programs\Prayertimes\Al-Azan.mp3")
+        playsound(al_azan)
         sleep(60)
 
     else:
