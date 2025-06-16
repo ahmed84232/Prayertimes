@@ -111,4 +111,4 @@ while keep_alive:
         sleep(60)
 
     else:
-        sleep(10)
+        sleep(60)
