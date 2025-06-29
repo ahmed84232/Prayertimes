@@ -1,10 +1,10 @@
 import os
+from time import sleep
 
 import requests
-from time import sleep
-from datetime import datetime
-from plyer import notification
 from playsound import playsound
+from plyer import notification
+
 from timing import *
 
 
