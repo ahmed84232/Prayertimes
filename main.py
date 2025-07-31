@@ -69,7 +69,6 @@ while keep_alive:
     elif duha == current_time_12():
 
         notify("Azan", "Time to pray Duha", "Prayertimes")
-        playsound(al_azan)
         sleep(60)
 
     elif duhr == current_time_12():
